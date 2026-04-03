@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "AlunoTest",
+      "setup": "",
+      "run": "mvn -q -B -ntp -Dtest=AlunoTest test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
+
