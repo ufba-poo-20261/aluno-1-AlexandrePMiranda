@@ -23,16 +23,5 @@ public class Aluno {
         this.matricula = matricula;
         this.nome = nome;
     }
-
-    public static void main(String[] args) {
-        Aluno x = new Aluno("120261", "Alex");
-
-        System.out.println(x.nome);
-        System.out.println(x.matricula);
-
-        x.setNome("Alexndre");
-
-        System.out.println("novo nome" + " " + x.nome);
-    }
 }
 
