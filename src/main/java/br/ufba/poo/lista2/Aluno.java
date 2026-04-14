@@ -16,12 +16,28 @@ package br.ufba.poo.lista2;
  */
 public class Aluno {
 
-    public final String  matricula;
+    private final String  matricula;
     private String nome;
 
     public Aluno(String matricula, String nome) {
         this.matricula = matricula;
         this.nome = nome;
     }
+
+    public boolean equals(Object obj) {
+        Aluno outro = (Aluno)obj;
+        return (outro.matricula == null ? this.matricula == null : outro.matricula.equals(this.matricula));
+    }
+
+    public String getMatricula(){
+        return this.matricula;
+    }
+    public String getNome(){
+        return  this.nome;
+    }
+    public void setNome(String n){
+        this.nome = n;
+    }
+
 }
 
