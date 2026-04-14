@@ -24,10 +24,6 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-
     public static void main(String[] args) {
         Aluno x = new Aluno("120261", "Alex");
 
