@@ -16,7 +16,27 @@ package br.ufba.poo.lista2;
  */
 public class Aluno {
 
+    public final String  matricula;
+    private String nome;
+
     public Aluno(String matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public static void main(String[] args) {
+        Aluno x = new Aluno("120261", "Alex");
+
+        System.out.println(x.nome);
+        System.out.println(x.matricula);
+
+        x.setNome("Alexndre");
+
+        System.out.println("novo nome" + " " + x.nome);
     }
 }
 
